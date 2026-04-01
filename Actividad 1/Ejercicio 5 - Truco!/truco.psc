@@ -1,0 +1,36 @@
+Proceso truco
+	definir premio,mPremio,primPremio,por1,por2,por3,por4,por5,por6,premPuntos1,premPuntos2,premPuntos3,premPuntos4,premPuntos5,premPuntos6,totalJugador1,totalJugador2,totalJugador3,totalJugador4,totalJugador5,totalJugador6 como real;
+	definir p1,p2,p3,p4,p5,p6,s como entero;
+	Escribir "Ingrese el premio a repartir";
+	Leer premio;
+	Escribir "Ingrese los puntos de cada participante";
+	Leer p1,p2,p3,p4,p5,p6;
+	mPremio <- premio/2;
+	primPremio <- mPremio/6;
+	s <- p1+p2+p3+p4+p5+p6;
+	por1 <- (p1/s)*100;
+	por2 <- (p2/s)*100;
+	por3 <- (p3/s)*100;
+	por4 <- (p4/s)*100;
+	por5 <- (p5/s)*100;
+	por6 <- (p6/s)*100;
+	premPuntos1 <- (por1*mPremio)/100;
+	premPuntos2 <- (por2*mPremio)/100;
+	premPuntos3 <- (por3*mPremio)/100;
+	premPuntos4 <- (por4*mPremio)/100;
+	premPuntos5 <- (por5*mPremio)/100;
+	premPuntos6 <- (por6*mPremio)/100;
+	totalJugador1 <- primPremio+premPuntos1;
+	totalJugador2 <- primPremio+premPuntos2;
+	totalJugador3 <- primPremio+premPuntos3;
+	totalJugador4 <- primPremio+premPuntos4;
+	totalJugador5 <- primPremio+premPuntos5;
+	totalJugador6 <- primPremio+premPuntos6;
+	Escribir "Premio a repartir $" ,premio;
+	Escribir "Jugador 1 $" ,totalJugador1;
+	Escribir "Jugador 2 $" ,totalJugador2;
+	Escribir "Jugador 3 $" ,totalJugador3;
+	Escribir "Jugador 4 $" ,totalJugador4;
+	Escribir "Jugador 5 $" ,totalJugador5;
+	Escribir "Jugador 6 $" ,totalJugador6;
+FinProceso
